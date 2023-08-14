@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>带带振</title>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 </head>
 <body>
-带带振
+<h2>带带振</h2>
+<div id="gitalk-container"></div>
+
 </body>
 </html>
+<script>
+    console.log(CLIENTID)
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'GitHub repo',
+        owner: 'GitHub repo owner',
+        admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+
+</script>
