@@ -5,55 +5,24 @@
     <title>带带振</title>
     <link href="./favicon.svg" rel="icon"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <link href="https://unpkg.com/gitalk/dist/gitalk.css" rel="stylesheet">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 </head>
 <body>
-<h2>带带振</h2>
-<div id="gitalk-container"></div>
-<div class="mode-box">
-    <a class="mouse" href="https://beian.miit.gov.cn/" target="_blank">豫ICP备20023358号</a>&nbsp;
-    <a
-            href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"
-            target="view_window">
-        本网站由
-        <img alt class="ypy" src="./ypy.svg"/>
-        提供CDN/云存储服务
-    </a>
-</div>
+<iframe src="//uxzhen.gitee.io/"></iframe>
 </body>
 </html>
 <script>
-    var gitalk = new Gitalk({
-        clientID: 'f2062dadf3acb775ad51',
-        clientSecret: '57d0b8cb3462e90c0d965d2ffb2402cef48331ca',
-        repo: 'lssues',
-        owner: 'uxzhen',
-        admin: ['uxzhen'],
-        id: 'home',      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    })
 
-    gitalk.render('gitalk-container')
 
 </script>
 <style>
-    .mode-box {
-        margin-top: 60px;
-        text-align: center;
-
+    * {
+        margin: 0;
+        padding: 0;
     }
 
-    .mode-box a {
-        font-size: 12px;
-        height: 42px;
-        line-height: 42px;
-
-    }
-
-    .mode-box a .ypy {
-        vertical-align: middle;
-        margin-top: -3px;
-        height: 42px;
+    iframe {
+        border: 0;
+        min-width: 100vw;
+        min-height: 100vh;
     }
 </style>
